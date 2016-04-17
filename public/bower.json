@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "authors": [
+    "Jalv <juanevz@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "angularjs#^1.5.4",
+    "angular-route": "^1.5.3"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <title>Student</title>
+</head>
+<body>
+<div class="container">
+    <h1> Student </h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Student</th>
+            <th>Subject</th>
+            <th>&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tr>
+        <tr ng-form="myForm">
+            <td><input type="text" class="form-control"  required ng-model="student.name">
+
+                </input></td>
+            <td><input class="form-control" id="myInput" ng-model="subject.name">
+
+
+            <td><button class="btn btn-primary" ng-click="addToSubject()"ng-disabled="myForm.$invalid">ADD Student</button></td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+<!-- Librería jQuery requerida por los plugins de JavaScript -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="studentController.js"></script>
+</body>
+</html>

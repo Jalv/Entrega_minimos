@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BIENVENIDO </title>
+</head>
+<body>
+<h1>{{subject.name}}</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Students</th>
+        <th>&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td rowspan="12">{{subject.name}}</td>
+    </tr>
+    <tr ng-repeat="student in students">
+        <td>{{student.name}}</td>
+        <td><a class="btn btn-success" href="#/student/{{student.name}}/detail">Detalles</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
